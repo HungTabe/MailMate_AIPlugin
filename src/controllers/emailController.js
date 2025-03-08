@@ -25,7 +25,7 @@ exports.getEmails = async (req, res) => {
 
       // Gọi OpenAI API với cú pháp mới
       const aiResponse = await openai.completions.create({
-        model: 'gpt-4', // Hoặc 'gpt-3.5-turbo' nếu không có quyền truy cập GPT-4
+        model: 'gpt-3.5-turbo', // Hoặc 'gpt-3.5-turbo' nếu không có quyền truy cập GPT-4
         prompt: `Tóm tắt email ngắn gọn và phân loại (quan trọng, spam, quảng cáo): ${snippet}`,
         max_tokens: 50,
       });
