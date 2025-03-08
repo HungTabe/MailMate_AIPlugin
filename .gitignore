@@ -1,0 +1,32 @@
+# Node.js
+node_modules/           # Không theo dõi thư mục dependencies
+npm-debug.log           # Log lỗi từ npm
+*.log                   # Các file log khác
+
+# Environment variables
+.env                    # File chứa thông tin nhạy cảm (API keys, tokens)
+
+# Build output
+dist/                   # Thư mục build của frontend (nếu có)
+build/                  # Thư mục build khác (nếu dùng React)
+
+# Docker
+*.dockerignore          # File dockerignore (nếu có)
+Dockerfile.*            # Các Dockerfile tạm thời
+
+# IDE/Editor files
+.vscode/                # Cấu hình VS Code
+.idea/                  # Cấu hình WebStorm
+*.sublime-*             # Cấu hình Sublime Text
+
+# Temporary files
+*.tmp                   # File tạm
+*.bak                   # File backup
+*.swp                   # File swap từ Vim
+
+# OS generated files
+.DS_Store               # macOS
+Thumbs.db               # Windows
+
+# Test coverage
+coverage/               # Thư mục báo cáo test (nếu có)
